@@ -17,7 +17,7 @@ class Record(models.Model):
 
 class Tag(models.Model):
     """Модель тега"""
-    name = models.CharField()
+    name = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
